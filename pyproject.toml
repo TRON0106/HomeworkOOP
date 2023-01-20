@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "oop-task"
+version = "0.1.0"
+description = ""
+authors = ["Dzhalil <>"]
+readme = "README.md"
+packages = [{include = "oop_task"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.scripts]
+test_script = "oop_task.test_script:run"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
